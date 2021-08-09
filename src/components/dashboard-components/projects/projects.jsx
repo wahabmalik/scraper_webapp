@@ -24,100 +24,102 @@ const Projects = () => {
         <Card>
             <CardBody>
                 <div className="d-flex align-items-center">
-                    <div>
+                    {/* <div>
                         <CardTitle>Projects of the Month</CardTitle>
                         <CardSubtitle>Overview of Latest Month</CardSubtitle>
-                    </div>
+                    </div> */}
                     <div className="ml-auto d-flex no-block align-items-center">
-                        <div className="dl">
+                        {/* <div className="dl">
                             <Input type="select" className="custom-select">
                                 <option value="0">Monthly</option>
                                 <option value="1">Daily</option>
                                 <option value="2">Weekly</option>
                                 <option value="3">Yearly</option>
                             </Input>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <Table className="no-wrap v-middle" responsive>
                     <thead>
                         <tr className="border-0">
-                            <th className="border-0">Team Lead</th>
-                            <th className="border-0">Project</th>
+                            <th className="border-0">Name </th>
+                            <th className="border-0">Time</th>
 
-                            <th className="border-0">Status</th>
-                            <th className="border-0">Weeks</th>
-                            <th className="border-0">Budget</th>
+                            <th className="border-0">Signal Type</th>
+                            <th className="border-0">Symbol</th>
+                            <th className="border-0">Expiration</th>
+                            <th className="border-0">Strike Price</th>
+                            <th className="border-0">Price Executed</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
                                 <div className="d-flex no-block align-items-center">
-                                    <div className="mr-2"><img src={img1} alt="user" className="rounded-circle" width="45" /></div>
-                                    <div className="">
-                                        <h5 className="mb-0 font-16 font-medium">Hanna Gover</h5><span>hgover@gmail.com</span></div>
+                                    {/* <div className="mr-2"><img src={img1} alt="user" className="rounded-circle" width="45" /></div> */}
+                                    {/* <div className="">
+                                        <h5 className="mb-0 font-16 font-medium">R1</h5><span>salman@itsraven.com </span></div> */}
                                 </div>
                             </td>
-                            <td>Elite Admin</td>
+                            {/* <td>Elite Admin</td> */}
 
-                            <td>
+                            {/* <td>
                                 <i className="fa fa-circle text-orange" id="tlp1"></i>
 
-                            </td>
-                            <td>35</td>
-                            <td className="blue-grey-text  text-darken-4 font-medium">$96K</td>
+                            </td> */}
+                            {/* <td>35</td>
+                            <td className="blue-grey-text  text-darken-4 font-medium">$96K</td> */}
                         </tr>
                         <tr>
                             <td>
                                 <div className="d-flex no-block align-items-center">
-                                    <div className="mr-2"><img src={img2} alt="user" className="rounded-circle" width="45" /></div>
-                                    <div className="">
-                                        <h5 className="mb-0 font-16 font-medium">Daniel Kristeen</h5><span>Kristeen@gmail.com</span></div>
+                                    {/* <div className="mr-2"><img src={img2} alt="user" className="rounded-circle" width="45" /></div> */}
+                                    {/* <div className="">
+                                        <h5 className="mb-0 font-16 font-medium">R2</h5><span>Kristeen@gmail.com</span></div> */}
                                 </div>
                             </td>
-                            <td>Elite Admin</td>
+                            {/* <td>Elite Admin</td> */}
 
                             <td>
-                                <i className="fa fa-circle text-success" id="tlp2"></i>
+                                {/* <i className="fa fa-circle text-success" id="tlp2"></i> */}
 
                             </td>
-                            <td>35</td>
-                            <td className="blue-grey-text  text-darken-4 font-medium">$96K</td>
+                            {/* <td>35</td> */}
+                            {/* <td className="blue-grey-text  text-darken-4 font-medium">$96K</td> */}
                         </tr>
                         <tr>
                             <td>
                                 <div className="d-flex no-block align-items-center">
-                                    <div className="mr-2"><img src={img3} alt="user" className="rounded-circle" width="45" /></div>
-                                    <div className="">
-                                        <h5 className="mb-0 font-16 font-medium">Julian Josephs</h5><span>Josephs@gmail.com</span></div>
+                                    {/* <div className="mr-2"><img src={img3} alt="user" className="rounded-circle" width="45" /></div> */}
+                                    {/* <div className="">
+                                        <h5 className="mb-0 font-16 font-medium">R3</h5><span>Josephs@gmail.com</span></div> */}
                                 </div>
                             </td>
-                            <td>Elite Admin</td>
+                            {/* <td>Elite Admin</td> */}
 
                             <td>
-                                <i className="fa fa-circle text-success" id="tlp3"></i>
+                                {/* <i className="fa fa-circle text-success" id="tlp3"></i> */}
 
                             </td>
-                            <td>35</td>
-                            <td className="blue-grey-text  text-darken-4 font-medium">$96K</td>
+                            {/* <td>35</td>
+                            <td className="blue-grey-text  text-darken-4 font-medium">$96K</td> */}
                         </tr>
                         <tr>
                             <td>
                                 <div className="d-flex no-block align-items-center">
-                                    <div className="mr-2"><img src={img4} alt="user" className="rounded-circle" width="45" /></div>
-                                    <div className="">
-                                        <h5 className="mb-0 font-16 font-medium">Jan Petrovic</h5><span>hgover@gmail.com</span></div>
+                                    {/* <div className="mr-2"><img src={img4} alt="user" className="rounded-circle" width="45" /></div> */}
+                                    {/* <div className="">
+                                        <h5 className="mb-0 font-16 font-medium">R4</h5><span>hgover@gmail.com</span></div> */}
                                 </div>
                             </td>
-                            <td>Elite Admin</td>
+                            {/* <td>Elite Admin</td> */}
 
                             <td>
-                                <i className="fa fa-circle text-orange" id="tlp4"></i>
+                                {/* <i className="fa fa-circle text-orange" id="tlp4"></i> */}
 
                             </td>
-                            <td>35</td>
-                            <td className="blue-grey-text  text-darken-4 font-medium">$96K</td>
+                            {/* <td>35</td>
+                            <td className="blue-grey-text  text-darken-4 font-medium">$96K</td> */}
                         </tr>
                     </tbody>
                 </Table>

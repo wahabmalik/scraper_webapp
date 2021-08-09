@@ -15,7 +15,7 @@ const Badges = () => {
                     <Card>
                         <CardTitle className="bg-light border-bottom p-3 mb-0">
                             <i className="mdi mdi-arrange-send-backward mr-2"> </i>
-                            Badges
+                            Settings
                         </CardTitle>
                         <CardBody className="">
                             <div>

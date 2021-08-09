@@ -18,7 +18,7 @@ import profilephoto from '../../assets/images/users/1.jpg';
 /* Import images which are need for the HEADER                                    */
 /*--------------------------------------------------------------------------------*/
 import logodarkicon from '../../assets/images/logo-icon.png';
-// import logolighticon from '../../assets/images/logo-light-icon.png';
+import logolighticon from '../../assets/images/logo-light-icon.png';
 import logodarktext from '../../assets/images/logo-text.png';
 import logolighttext from '../../assets/images/logo-light-text.png';
 
@@ -65,9 +65,9 @@ const Header = () => {
                 </div>
                 <Collapse className="navbarbg" navbar data-navbarbg="skin6" >
                     <Nav className="ml-auto float-right" navbar>
-                        <NavItem>
+                        {/* <NavItem>
                             <a href="https://www.wrappixel.com/templates/adminpro-react-redux-admin/" className="btn btn-danger mr-2" style={{ marginTop: '15px' }}>Upgrade to Pro</a>
-                        </NavItem>
+                        </NavItem> */}
                         {/*--------------------------------------------------------------------------------*/}
                         {/* Start Profile Dropdown                                                         */}
                         {/*--------------------------------------------------------------------------------*/}
@@ -82,14 +82,14 @@ const Header = () => {
                             </DropdownToggle>
                             <DropdownMenu right className="user-dd">
                                 <DropdownItem>
-                                    <i className="ti-user mr-1 ml-1" /> My Account
+                                    <i className="ti-user mr-1 ml-1" /> My Profile
                   </DropdownItem>
-                                <DropdownItem>
+                                {/* <DropdownItem>
                                     <i className="ti-wallet mr-1 ml-1" /> My Balance
-                  </DropdownItem>
-                                <DropdownItem>
+                  </DropdownItem> */}
+                                {/* <DropdownItem>
                                     <i className="ti-email mr-1 ml-1" /> Inbox
-                  </DropdownItem>
+                  </DropdownItem> */}
                                 <DropdownItem divider />
                                 <DropdownItem>
                                     <i className="ti-settings mr-1 ml-1" /> Account Settings
@@ -99,12 +99,12 @@ const Header = () => {
                                     <i className="fa fa-power-off mr-1 ml-1" /> Logout
                   </DropdownItem>
                                 <DropdownItem divider />
-                                <Button
+                                {/* <Button
                                     color="success"
                                     className="btn-rounded ml-3 mb-2 mt-2"
                                 >
                                     View Profile
-                  </Button>
+                  </Button> */}
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         {/*--------------------------------------------------------------------------------*/}
