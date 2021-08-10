@@ -3,6 +3,9 @@ import Starter from '../views/starter/starter.jsx';
 import Alerts from '../views/ui-components/alert.jsx';
 import Badges from '../views/ui-components/badge.jsx';
 import Buttons from '../views/ui-components/button.jsx';
+import Signin from '../views/ui-components/signin.jsx';
+import Signup from '../views/ui-components/signup.jsx';
+
 // import Cards from '../views/ui-components/cards.jsx';
 // import LayoutComponent from '../views/ui-components/layout.jsx';
 // import PaginationComponent from '../views/ui-components/pagination.jsx';
@@ -33,6 +36,18 @@ var ThemeRoutes = [
     name: 'Profile',
     icon: 'mdi mdi-toggle-switch',
     component: Buttons
+  },
+  {
+    path: '/Signin',
+    name: 'Sign in',
+    icon: 'mdi mdi-toggle-switch',
+    component: Signin
+  },
+  {
+    path: '/Signup',
+    name: 'Sign up',
+    icon: 'mdi mdi-toggle-switch',
+    component: Signup
   },
   // {
   //   path: '/card',

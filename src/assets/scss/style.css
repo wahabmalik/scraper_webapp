@@ -8574,6 +8574,7 @@ Preloader
 #main-wrapper {
   width: 100%;
   overflow: hidden; }
+  
 
 .page-wrapper {
   background: #eef5f9;
@@ -9037,3 +9038,25 @@ User Profile
 .create-btn {
   height: 40px;
   background: #32325d; }
+
+  @media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
+
+  @media all and (min-width: 480px) {
+    .Signup {
+      padding: 60px 0;
+    }
+  
+    .Signup form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }

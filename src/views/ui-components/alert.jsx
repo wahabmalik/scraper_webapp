@@ -1,219 +1,114 @@
-import React, { useState } from 'react';
+import React from "react";
+import img1 from 'assets/images/users/1.jpg';
+import img2 from 'assets/images/users/2.jpg';
+import img3 from 'assets/images/users/3.jpg';
+import img4 from 'assets/images/users/4.jpg';
 import {
-    Alert,
-    UncontrolledAlert,
     Card,
     CardBody,
-    CardTitle
+    CardTitle,
+    CardSubtitle,
+    Input,
+    Table
 } from 'reactstrap';
-
-const Alerts = () => {
-    // For Dismiss Button with Alert
-    const [visible, setVisible] = useState(true);
-
-    const onDismiss = () => {
-        setVisible(false);
-    }
-
+const Projects = () => {
     return (
-        <div>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Start Inner Div*/}
-            {/* --------------------------------------------------------------------------------*/}
-
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-1*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2"> </i>
-            Alert
-          </CardTitle>
-                <CardBody className="">
-                    <div className="mt-3">
-                        <Alert color="primary">
-                            This is a primary alert— check it out!
-              </Alert>
-                        <Alert color="secondary">
-                            This is a secondary alert— check it out!
-              </Alert>
-                        <Alert color="success">
-                            This is a success alert— check it out!
-              </Alert>
-                        <Alert color="danger">
-                            This is a danger alert— check it out!
-              </Alert>
-                        <Alert color="warning">
-                            This is a warning alert— check it out!
-              </Alert>
-                        <Alert color="info">This is a info alert— check it out!</Alert>
-                        <Alert color="light">This is a light alert— check it out!</Alert>
-                        <Alert color="dark">This is a dark alert</Alert>
+        /*--------------------------------------------------------------------------------*/
+        /* Used In Dashboard-4 [General]                                                  */
+        /*--------------------------------------------------------------------------------*/
+        <Card>
+            <CardBody>
+                <div className="d-flex align-items-center">
+                    {/* <div>
+                        <CardTitle>Projects of the Month</CardTitle>
+                        <CardSubtitle>Overview of Latest Month</CardSubtitle>
+                    </div> */}
+                    <div className="ml-auto d-flex no-block align-items-center">
+                        {/* <div className="dl">
+                            <Input type="select" className="custom-select">
+                                <option value="0">Monthly</option>
+                                <option value="1">Daily</option>
+                                <option value="2">Weekly</option>
+                                <option value="3">Yearly</option>
+                            </Input>
+                        </div> */}
                     </div>
-                </CardBody>
-            </Card>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-2*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2" />
-            Alert with Links
-          </CardTitle>
-                <CardBody className="">
-                    <div>
-                        <Alert color="primary">
-                            This is a primary alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="secondary">
-                            This is a secondary alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="success">
-                            This is a success alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="danger">
-                            This is a danger alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="warning">
-                            This is a warning alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="info">
-                            This is a info alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="light">
-                            This is a light alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="dark">
-                            This is a dark alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                    </div>
-                </CardBody>
-            </Card>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-3*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2" />
-            Alert with Additional content
-          </CardTitle>
-                <CardBody className="">
-                    <div>
-                        <Alert color="success">
-                            <h4 className="alert-heading">Well done!</h4>
-                            <p>
-                                Aww yeah, you successfully read this important alert message.
-                                This example text is going to run a bit longer so that you can
-                                see how spacing within an alert works with this kind of
-                                content.
-                </p>
-                            <hr />
-                            <p className="mb-0">
-                                Whenever you need to, be sure to use margin utilities to keep
-                                things nice and tidy.
-                </p>
-                        </Alert>
-                    </div>
-                </CardBody>
-            </Card>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-4*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2" />
-            Alert with Dissmissing
-          </CardTitle>
-                <CardBody className="">
-                    <div>
-                        <Alert
-                            color="info"
-                            isOpen={visible}
-                            toggle={onDismiss.bind(null)}
-                        >
-                            I am an alert and I can be dismissed!
-              </Alert>
-                    </div>
-                </CardBody>
-            </Card>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-5*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2" />
-            Alert with Uncontrolled [disable] Alerts
-          </CardTitle>
-                <CardBody className="">
-                    <div>
-                        <UncontrolledAlert color="info">
-                            I am an alert and I can be dismissed!
-              </UncontrolledAlert>
-                    </div>
-                </CardBody>
-            </Card>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-6*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2" />
-            Alerts without fade
-          </CardTitle>
-                <CardBody className="">
-                    <div>
-                        <Alert
-                            color="primary"
-                            isOpen={visible}
-                            toggle={onDismiss.bind(null)}
-                            fade={false}
-                        >
-                            I am a primary alert and I can be dismissed without animating!
-              </Alert>
-                        <UncontrolledAlert color="warning" fade={false}>
-                            I am an alert and I can be dismissed without animating!
-              </UncontrolledAlert>
-                    </div>
-                </CardBody>
-            </Card>
-
-            {/* --------------------------------------------------------------------------------*/}
-            {/* End Inner Div*/}
-            {/* --------------------------------------------------------------------------------*/}
-        </div>
+                </div>
+                <Table className="no-wrap v-middle" responsive>
+                    <thead>
+                        <tr className="border-0">
+                            <th className="border-0">Name </th>
+                            <th className="border-0">Success Rate</th>
+                            <th className="border-0">Profit</th>
+                            <th className="border-0">Average Return Per Trade</th>
+                            <th className="border-0">Number of Trade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div className="d-flex no-block align-items-center">
+                                    {/* <div className="mr-2"><img src={img1} alt="user" className="rounded-circle" width="45" /></div> */}
+                                    {/* <div className="">
+                                        <h5 className="mb-0 font-16 font-medium">R1</h5><span>salman@itsraven.com </span></div> */}
+                                </div>
+                            </td>
+                            {/* <td>Elite Admin</td> */}
+                            {/* <td>
+                                <i className="fa fa-circle text-orange" id="tlp1"></i>
+                            </td> */}
+                            {/* <td>35</td>
+                            <td className="blue-grey-text  text-darken-4 font-medium">$96K</td> */}
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="d-flex no-block align-items-center">
+                                    {/* <div className="mr-2"><img src={img2} alt="user" className="rounded-circle" width="45" /></div> */}
+                                    {/* <div className="">
+                                        <h5 className="mb-0 font-16 font-medium">R2</h5><span>Kristeen@gmail.com</span></div> */}
+                                </div>
+                            </td>
+                            {/* <td>Elite Admin</td> */}
+                            <td>
+                                {/* <i className="fa fa-circle text-success" id="tlp2"></i> */}
+                            </td>
+                            {/* <td>35</td> */}
+                            {/* <td className="blue-grey-text  text-darken-4 font-medium">$96K</td> */}
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="d-flex no-block align-items-center">
+                                    {/* <div className="mr-2"><img src={img3} alt="user" className="rounded-circle" width="45" /></div> */}
+                                    {/* <div className="">
+                                        <h5 className="mb-0 font-16 font-medium">R3</h5><span>Josephs@gmail.com</span></div> */}
+                                </div>
+                            </td>
+                            {/* <td>Elite Admin</td> */}
+                            <td>
+                                {/* <i className="fa fa-circle text-success" id="tlp3"></i> */}
+                            </td>
+                            {/* <td>35</td>
+                            <td className="blue-grey-text  text-darken-4 font-medium">$96K</td> */}
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="d-flex no-block align-items-center">
+                                    {/* <div className="mr-2"><img src={img4} alt="user" className="rounded-circle" width="45" /></div> */}
+                                    {/* <div className="">
+                                        <h5 className="mb-0 font-16 font-medium">R4</h5><span>hgover@gmail.com</span></div> */}
+                                </div>
+                            </td>
+                            {/* <td>Elite Admin</td> */}
+                            <td>
+                                {/* <i className="fa fa-circle text-orange" id="tlp4"></i> */}
+                            </td>
+                            {/* <td>35</td>
+                            <td className="blue-grey-text  text-darken-4 font-medium">$96K</td> */}
+                        </tr>
+                    </tbody>
+                </Table>
+            </CardBody>
+        </Card>
     );
 }
-
-export default Alerts;
+export default Projects;

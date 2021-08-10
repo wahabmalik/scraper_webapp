@@ -8,9 +8,9 @@ import {
 const Feeds = () => {
     return (
         <Card>
-            <CardBody>
-                <CardTitle>Feeds</CardTitle>
-                <div className="feed-widget">
+            {/* <CardBody> */}
+                {/* <CardTitle>Feeds</CardTitle> */}
+                {/* <div className="feed-widget">
                     <ul className="list-style-none feed-body m-0 pb-3">
                         <li className="feed-item">
                             <div className="feed-icon bg-info"><i className="far fa-bell"></i></div> You have 4 pending tasks. <span className="ml-auto font-12 text-muted">Just Now</span>
@@ -32,8 +32,8 @@ const Feeds = () => {
                         </li>
 
                     </ul>
-                </div>
-            </CardBody>
+                </div> */}
+            {/* </CardBody> */}
         </Card >
     );
 }

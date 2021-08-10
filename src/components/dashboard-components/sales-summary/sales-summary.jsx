@@ -7,27 +7,27 @@ import {
     Col,
     Row
 } from 'reactstrap';
-import { Line } from 'react-chartjs-2';
+// import { Line } from 'react-chartjs-2';
 
 //Line chart
 let lineData = {
     labels: [1, 2, 3, 4, 5, 6, 7, 8],
     datasets: [{
-        label: 'Income',
-        borderWidth: 1,
-        backgroundColor: 'rgba(94,114,228,.1)',
-        borderColor: 'rgb(94,114,228)',
-        pointBorderColor: 'rgb(94,114,228)',
-        pointBackgroundColor: 'rgb(94,114,228)',
-        data: [0, 15, 6, 11, 25, 9, 18, 24]
+        // label: 'Income',
+        // borderWidth: 1,
+        // backgroundColor: 'rgba(94,114,228,.1)',
+        // borderColor: 'rgb(94,114,228)',
+        // pointBorderColor: 'rgb(94,114,228)',
+        // pointBackgroundColor: 'rgb(94,114,228)',
+        // data: [0, 15, 6, 11, 25, 9, 18, 24]
     }]
 };
 
 const SalesSummary = () => {
     return (
         <Card>
-            <CardBody>
-                <div className="d-flex align-items-center">
+            {/* <CardBody> */}
+                {/* <div className="d-flex align-items-center">
                     <div>
                         <CardTitle>Sales Summary</CardTitle>
                         <CardSubtitle>summary of the month</CardSubtitle>
@@ -41,9 +41,9 @@ const SalesSummary = () => {
 
                         </ul>
                     </div>
-                </div>
-            </CardBody>
-            <div className="bg-info stats-bar">
+                </div> */}
+            {/* </CardBody> */}
+            {/* <div className="bg-info stats-bar">
                 <Row>
                     <Col lg="4">
                         <div className="p-3 active w-100 text-truncate">
@@ -65,18 +65,18 @@ const SalesSummary = () => {
                             <h3 className="text-white m-b-0">$1,476</h3>
                         </div></Col>
                 </Row>
-            </div>
-            <CardBody>
+            </div> */}
+            {/* <CardBody> */}
                 <Row>
                     <Col lg="12">
                         <div className="campaign ct-charts">
-                            <div className="chart-wrapper" style={{ width: '100%', margin: '0 auto', height: 250 }}>
+                            {/* <div className="chart-wrapper" style={{ width: '100%', margin: '0 auto', height: 250 }}>
                                 <Line data={lineData} options={{ maintainAspectRatio: false, legend: { display: false, labels: { fontFamily: "Montserrat" } }, scales: { yAxes: [{ stacked: true, gridLines: { display: true }, lineSmooth: false, ticks: { fontFamily: "Montserrat" } }], xAxes: [{ gridLines: { display: false }, ticks: { fontFamily: "Montserrat" } }] } }} />
-                            </div>
+                            </div> */}
                         </div>
                     </Col>
                 </Row>
-            </CardBody>
+            {/* </CardBody> */}
         </Card>
     );
 }
